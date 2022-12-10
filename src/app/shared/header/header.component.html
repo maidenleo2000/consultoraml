@@ -1,0 +1,39 @@
+<!-- Cabecera de página -->
+
+<header id="header" class="carousel slide" data-bs-ride="carousel">
+    <!-- Galeria de imagenes -->
+    <ul class="carousel-inner | list-unstyled">
+        <li class="carousel-item active">
+            <!-- Con w-100 me aseguro que la imagen cubra todo el contenedor (es lo mismo a col-12 pero se usa w-100 que es al 100% y esta pensado para imagenes).
+            Con d-lg-none le digo que NO QUIERO que se muestre en pantallas grandes -->
+            <img class="w-100" src="assets\img\header.jpg" alt="">
+            <!-- con d-none que es display: none le estoy diciendo que no se vea y con d-lg-block que es display, lg que es CUANDO QUIERO QUE OCURRA ESTO (en pantallas grandes) y block se ve SOLAMENTE en pantallas grandes. Funciona asi: atributo-breakpoint-valor 
+            <img class="w-100 d-none d-lg-block" src="assets/bg/header-lg-01.jpg" alt="">-->
+        </li>
+        <li class="carousel-item">
+            <img class="w-100" src="assets\img\header2.jpg" alt="">            
+        </li>
+        
+    </ul>
+
+    <!-- Indicadores de imagen -->
+
+    <div class="carousel-indicators">
+        <button class="active" data-bs-target="#header" data-bs-slide-to="0"></button>
+        <button data-bs-target="#header" data-bs-slide-to="1"></button>
+    </div>
+    <!-- Controles de galeria -->
+    <!-- Uso de pipes line:  
+        clases del componente | estilo de visualizacion | colores | texto
+    -->
+    <button class="carousel-control-prev | carousel-control-prev-icon | top-50 translate-middle-y p-3" data-bs-target="#header" data-bs-slide="prev"></button>
+    <button class="carousel-control-next | carousel-control-next-icon | top-50 top-50 translate-middle-y p-3" data-bs-target="#header" data-bs-slide="next"></button>
+
+    <!-- Encabezado -->
+    
+    <div class="position-absolute top-50 start-50 translate-middle | text-light text-center">
+        <!-- position-absolute posiciona el elemento a la mitad (con top50 y start50) de su contenedor pero eso lo ubica exactamente a la mitad en el INICIO del div, necesitamos que se ubique a la mitad real y eso se logra con translate-middle que ubica el contenido exactamente en el medio -->
+        <h1 class="display-3 | fw-bold text-uppercase">DESARROLLO DE SISTEMAS A MEDIDA</h1>
+        <p class="h3">Brindamos soluciones de software para únicos que le dan ventajas frente a la competencia.</p>
+    </div>
+  </header>
